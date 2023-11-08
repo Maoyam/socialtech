@@ -232,3 +232,57 @@ h3 {
 .culture-description {
   margin: 0;
 }
+
+#vision {
+  margin: 80px auto;
+}
+
+#vision > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.vision-box {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.vision-box img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+.vision-box > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 31;
+  margin-right: 20px;
+}
+
+.vision-box > span > h4 {
+  color: #2710d5;
+  margin-top: 80px;
+  font-size: 19px;
+}
+
+.vision-box > span > h4::first-letter {
+  font-size: 40px;
+}
+
+.vision-box > span > h5 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.vision-box > span > p {
+  margin-top: 10px;
+}
