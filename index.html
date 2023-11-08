@@ -264,7 +264,16 @@
         <section id="contact">
           <h2 class="index-h2">CONTACT</h2>
           <h3>お問い合わせ</h3>
-          <form>
+          <!-- STATIC FORMSのタグ -->
+          <form action="https://api.staticforms.xyz/submit" method="post">
+              <!-- Replace with accesKey sent to your email -->
+              <input type="text" name="honeypot" style="display: none;">
+              <input type="hidden" name="accessKey" value="f9869940-c735-4dfa-a395-fef003e7e482">
+              <input type="hidden" name="subject" value="お問い合わせフォーム" />
+              <!-- If you want replyTo to be set to specific email -->
+              <input type="hidden" name="replyTo" value="maruuca.com@gmail.com"> <!-- Optional -->
+              <!-- If you want form to redirect to a specific url after submission -->
+              <input type="hidden" name="redirectTo" value="">
             <!-- FORM 1行目 -->
             <div>
               <div class="contact-heading">
