@@ -188,3 +188,47 @@ h3 {
 #product-more {
   margin: 0 auto -42px auto;
 }
+
+#aboutus {
+  margin: 80px auto;
+}
+
+#aboutus > div {
+  display: flex;
+}
+
+.culture-img {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.culture-img2 {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.culture-table {
+  margin-right: 50px;
+}
+
+.culture-num {
+  font-size: 80px;
+  color: #2710d5;
+  margin-right: 20px;
+}
+
+.culture-en {
+  color: #2710d5;
+  font-weight: bold;
+  font-size: 24px;
+  display: block;
+}
+
+.culture-jp {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.culture-description {
+  margin: 0;
+}
