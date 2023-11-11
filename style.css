@@ -48,6 +48,11 @@ PC用のスタイル
   #nav-pc > a:active {
     color: #0d0d0d;
   }
+  /* スマホ用ナビを非表示 */
+  #nav-sp,
+  #manu-sp {
+    display: none;
+  }
 
   #main-visual {
     position: relative;
@@ -393,29 +398,29 @@ PC用のスタイル
     margin-bottom: 30px;
   }
 
-  .footer-link {
+  #footer-link {
     margin-bottom: 50px;
   }
 
-  .footer-link > a {
+  #footer-link > a {
     text-decoration: none;
     margin: 10px;
   }
 
-  .footer-link > a:link {
+  #footer-link > a:link {
     color: #fff;
   }
 
-  .footer-link > a:visited {
+  #footer-link > a:visited {
     color: #fff;
   }
 
-  .footer-link > a:hover {
+  #footer-link > a:hover {
     color: #fff;
     text-decoration: underline;
   }
 
-  .footer-link > a:active {
+  #footer-link > a:active {
     color: #fff;
   }
 
@@ -511,5 +516,325 @@ PC用のスタイル
   }
   #sns > a {
     margin-right: 30px;
+  }
+  /* メインビジュアル */
+  #main-visual {
+    position: relative;
+    height: 470px;
+    width: 100%;
+    overflow: hidden;
+  }
+  /*  メインメッセージグループdiv */
+  #main-visual > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2710d5;
+    color: #ffffff;
+    border-bottom-right-radius: 476px;
+    text-align: center;
+    height: 280px;
+    width: 100%;
+    z-index: 11;
+  }
+  /* メインビジュアルメッセージ */
+  #main-visual > div > h1 {
+    font-size: 28px;
+    margin-top: 90px;
+  }
+  #main-visual > div > p {
+    margin: 0;
+  }
+  /* メインビジュアル画像 */
+  #main-visual > img {
+    width: 100%;
+    border-top-left-radius: 476px;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  /* 見出し */
+  h2::after {
+    content: url("images/line.png");
+    margin-left: 10px;
+  }
+  h3 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  /* MISSION セクション */
+  #mission {
+    margin: 20px;
+  }
+  #mission-photo, #s2dgs {
+    width: 100%;
+  }
+  /* PRODUCTセクション */
+  /* セクション全体 */
+  #product {
+    background-color: #fafafa;
+    padding-top: 10px;
+  }
+  #product h2 {
+    margin-left: 20px;
+  }
+  #product-left, 
+  #product-right {
+    margin: 0 20px;
+  }
+  /* 見出し・説明文 */
+  #product-left > div, 
+  #product-right >div {
+    position: relative;
+    height: 540px;
+  }
+  .product-explain {
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+  }
+  .product-explain > span {
+    color: #2710d5;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+  }
+  .product-explain > h3 {
+    margin: 10px 0;
+  }
+  /* 画像 */
+  .product-photo {
+    width: 100%;
+  }
+  #product-more > img {
+    margin: 0 0 -42px 20px;
+  }
+/* ABOUT US セクション */
+  #aboutus {
+    margin: 80px 20px;
+  }
+  /* 表と1枚目画像のdiv */
+  #aboutus > div {
+    display: flex;
+    flex-direction: column;
+   }
+  /* 表全体 */
+  .culture-table {
+    width: 100%;
+    padding-right: 20px;
+    order: 2;
+    }
+  /* 1枚目の画像 */
+  .culture-img {
+    width: 100%;
+    order: 1;
+   }
+  /* 2枚目の画像 */
+  .culture-img2 {
+    width: 100%;
+   }
+  /* 番号・見出し・説明文 */
+  .culture-num {
+    font-size: 80px;
+    color: #2710d5;
+  }
+  .culture-en {
+    color: #2710d5;
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+  }
+  .culture-jp {
+    display: block;
+  }
+  .culture-description {
+    margin: 0;
+  }
+  /* VISIONセクション */
+  /* セクション全体 */
+  #vision {
+    margin: 80px 20px;
+  }
+  /* "行動指針"をグループ化するdiv */
+  .vision-box {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  /* 番号の背景画像 */
+  .vision-box > img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 30px;
+  }
+  /* 見出しと説明文 */
+  .vision-box > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 31;
+    margin-right: 20px;
+  }
+  .vision-box > span > h4 {
+    color: #2710d5;
+    font-size: 19px;
+    margin-top: 60px;
+  }
+  .vision-box > span > h5 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .vision-box > span > p {
+    margin-top: 10px;
+  }
+/* COMPANYセクション */
+  /* セクション全体と見出し */
+  #company {
+    margin: 0 20px;
+  }
+  #company > h3 {
+    margin-bottom: 20px;
+  }
+  /* 表と地図 */
+  #company > table {
+    width: 100%;
+  }
+  /* 表の１行目見出し */
+  .tableheader-first {
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid #2710d5;
+    border-top: 1px solid #2710d5; 
+    width: 50px;
+  }
+  /* 表の２行目以降見出し */
+  .tableheader {
+    text-align: left;
+    padding: 20px;
+    border-bottom: 1px solid #2710d5;
+    width: 50px;
+  }
+  /* 表の１行目のセル */
+  .cell-first {
+    padding: 20px;
+    border-bottom: 1px solid #ececec;
+    border-top: 1px solid #ececec;
+  }
+  /* 表の２行目以降のセル */
+  .cell {
+    padding: 20px;
+    border-bottom: 1px solid #ececec;
+  }
+  /* 地図 */
+  #coompany > iframe {
+    width: 100%;
+    height: 240px;
+    margin-top: 40px;
+  }
+/* CONTACT セクション */
+  /* セクションとお問い合わせフォーム全体 */
+  #contact {
+    margin: 80px 20px;
+  }
+  #contact > h3 {
+    margin-bottom: 20px;
+  }
+  /* 各フォームをグループ化するdiv */
+  #contact > form > div {
+    margin-bottom: 20px;
+  }
+  /* 各ラベルを囲むdiv */
+  .contact-heading {
+    margin-bottom: 20px;
+  }
+  /* 各フォーム */
+  .cootact-label {
+    font-weight: bold;
+  }
+  .contact-span {
+    color: #ce2222;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+  .contact-textbox {
+    height: 56px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #fafafa;
+    border-bottom: 1px solid #707070;
+    min-width: 300px;
+    width: 100%;
+  }
+  .contact-textarea {
+    height: 150px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #fafafa;
+    width: 100%;
+  }
+  .radiobutton {
+    margin-bottom: 20px;
+  }
+  .radiobutton+label::after {
+    content: "\A";
+    white-space: pre;
+  }
+/* フッター */
+  /* フッター全体とロゴ画像 */
+  footer {
+    background-color: #0d0d0d;
+    padding: 30px 20px 50px 20px;
+  }
+  /* ロゴ画像を囲むdiv */
+  #footer-logo {
+    margin-bottom: 30px;
+  }
+  /* ハイパーリンクをグループ化するdiv */
+  #footer-link {
+    margin-bottom: 50px;
+  }
+  /* ハイパーリンク */
+  #footer-link > a {
+  text-decoration: none;
+  margin: 0 20px 30px 0;
+  display: block;
+  background-image: url("images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  }
+  /* ハイパーリンクの擬似クラス */
+  #footer-link > a:link {
+    color: #ffffff;
+  }
+  #footer-link > a:visited {
+    color: #ffffff;
+  }
+  #footer-link > a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  #footer-link > a:active {
+    color: #ffffff;
+  }
+  /* SNSボタンとコピーライト */
+  #sns-footer > a {
+    margin-right: 30px;
+  }
+  /* コピーライトを囲むspan */
+  #copyright {
+    font-size: 12px;
+    display: block;
+    margin-top: 30px;
+    color: #ffffff;
   }
 }
