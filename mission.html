@@ -11,7 +11,7 @@
     <!-- ヘッダー -->
     <header>
       <!-- ロゴ -->
-      <a href="index.html"><img src="images/logo.png" alt="トップページに戻る"></a>
+      <a id="logo" href="index.html"><img src="images/logo.png" alt="トップページに戻る"></a>
       
       <!-- PC用ナビゲーション -->
       <nav id="nav-pc">
@@ -27,7 +27,8 @@
       <!-- スマホ用ナビゲーション -->
       <nav id="nav-sp">
         <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
-        <a id="logo-sp" href="index.html"><img src="images/logo-sp.png" alt="トップページに戻る"></a>
+        <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img src="images/logo-sp.png" alt="トップページに戻る"></a>
+        <a class="menu" href="mission.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MISSION</a>
         <a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
         <a class="menu" href="index.html#aboutus" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT US</a>
         <a class="menu" href="index.html#vision" onclick="document.getElementById('nav-sp').style.display = 'none'">VISION</a>
@@ -52,11 +53,11 @@
         <section id="mission-s2dgs">
           <h2 class="mission-h2">S2DGsの実現</h2>
           <p>国連の掲げる大中小169個の目標「SDGs」のうち、以下の5つの大目標の実現をミッションとします。</p>
-          <img src="images/mission/mission-s2dgs.png" alt="S2DGS">
+          <img src="images/mission/mission-s2dgs.png" alt="S2DGs">
         </section>
         <section id="mission-5goals">
           <div>
-            <img id="s2dgs-image" src="images/mission/mission-5goals.png" alt="5goals">
+            <img id="s2dgs-image" src="images/mission/mission-5goals.png" alt="5Goals">
           </div>  
           <div>
             <!-- 5Goalsの１つめ -->
@@ -101,14 +102,13 @@
               <img class="fivegoals-image-left" src="images/mission/mission-5goals05.png" alt="障害を持つ男性が生き生きと働く様子">
               <span class="fivegoals-number">05</span>
               <h3 class="fivegoals-h3">不平等をなくす</h3>
-              <p class="fivegoals-">
+              <p class="fivegoals-p">
                 障害やハンディキャップを持っていても、エンジニアになることで生産的に働くことができます。障がい者雇用における正社員率と平均賃金に大きな開きを無くすために、誰もがエンジニアになれる機会を提供します。
               </p>
             </div>
           </div>
         </section>
       </article>
-    </main>
     <footer>
       <div id="footer-logo">
         <img src="images/logo-sp.png" alt="SocialTech">
@@ -128,5 +128,6 @@
           <span id="copyright">&copy;2021 SocialTech, Inc. All Rights Reserved. </span>
       </div>
     </footer>
-  </body>
+    </main>
+</body>
 </html>

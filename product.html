@@ -11,7 +11,7 @@
     <!-- ヘッダー -->
     <header>
       <!-- ロゴ -->
-      <a href="index.html"><img src="images/logo.png" alt="トップページに戻る"></a>
+      <a id="logo" href="index.html"><img src="images/logo.png" alt="トップページに戻る"></a>
       
       <!-- PC用ナビゲーション -->
       <nav id="nav-pc">
@@ -27,7 +27,8 @@
       <!-- スマホ用ナビゲーション -->
       <nav id="nav-sp">
         <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display = 'none'">
-        <a id="logo-sp" href="index.html"><img src="images/logo-sp.png" alt="トップページに戻る"></a>
+        <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img src="images/logo-sp.png" alt="トップページに戻る"></a>
+        <a class="menu" href="mission.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MISSION</a>
         <a class="menu" href="product.html" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
         <a class="menu" href="index.html#aboutus" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT US</a>
         <a class="menu" href="index.html#vision" onclick="document.getElementById('nav-sp').style.display = 'none'">VISION</a>
@@ -92,7 +93,6 @@
           <img src="images/product/product-b2b.png" alt="講演中の男性とそれを聴く人々">
         </section>
       </article>
-    </main>
     <footer>
       <div id="footer-logo">
         <img src="images/logo-sp.png" alt="SocialTech">
@@ -112,3 +112,6 @@
           <span id="copyright">&copy;2021 SocialTech, Inc. All Rights Reserved. </span>
       </div>
     </footer>
+    </main>
+  </body>
+</html>
