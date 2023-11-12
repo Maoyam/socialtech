@@ -971,4 +971,55 @@ PC用のスタイル
     font-size: 13px;
   }
 /* S2DGsセクション */
+  /* セクション要素 */
+  #mission-s2dgs {
+    margin: 20px;
+  } 
+  /* 見出し */
+  .mission-h2 {
+    color: #2710d5;
+    font-size: 38px;
+    margin: 0;
+  }
+  /* 見出しの擬似要素 */
+  .mission-h2::after {
+    content: none;
+  }
+  /* 画像 */
+  #mission-s2dgs > img {
+    width: 100%;
+  }
+/* 5Goalsセクション */
+  /* セクション要素 */
+  #mission-5goals {
+    margin: 20px;
+  }
+  /* 1つ1つのコンテンツをグループ化するdiv */
+  #mission-5goals > div > div {
+    margin-bottom: 40px;
+  }
+  /* PCでセクション左に表示される画像 */
+  #s2dgs-image {
+    width: 100%;
+  }
+  /* PCでは左右に表示される画像 */
+  .fivegoals-image-right, .fivegoals-image-left {
+    margin: 20px auto;
+    display: block;
+  }
+  /* コンテンツの番号を囲むspan要素 */
+  .fivegoals-number {
+    color: #2710d5;
+    font-size: 48px;
+    margin: 0;
+  }
+  /* コンテンツの見出し */
+  .fivegoals-h3 {
+    font-size: 28px;
+    margin: 0;
+  }
+  /* コンテンツの説明文 */
+  .fivegoals-p {
+    margin: 0;
+  }
 }
