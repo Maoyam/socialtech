@@ -49,8 +49,7 @@ PC用のスタイル
     color: #0d0d0d;
   }
   /* スマホ用ナビを非表示 */
-  #nav-sp,
-  #manu-sp {
+  #nav-sp, #manu-sp {
     display: none;
   }
 
@@ -436,6 +435,45 @@ PC用のスタイル
   #copyright {
     color: #fff;
     float: right;
+  }
+/* MISSION.html用スタイル */
+  /* メインビジュアル */
+  #mission-main {
+    height: 496px;
+    width: 100%;
+    background-image: url("images/mission/mission-main.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+  /* 見出しやパンくずリストグループのdiv */
+  #mission-title {
+    background-color: #2710d5;
+    width: 368px;
+    color: #ffffff;
+    height: 496px;
+    border-radius: 0 248px 248px 0 ;
+    position: relative;
+  }
+  /* 英語の見出し */
+  #mission-title > h1 {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    font-size: 80px;
+  }
+  /* カタカナの見出し */
+  #mission-title > span {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 26px;
+  }
+  /* パンくずリスト */
+  #mission-title > div {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    font-size: 16px;
   }
   }
 /* ======================
