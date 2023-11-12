@@ -49,7 +49,7 @@ PC用のスタイル
     color: #0d0d0d;
   }
   /* スマホ用ナビを非表示 */
-  #nav-sp, #manu-sp {
+  #nav-sp, #menu-sp {
     display: none;
   }
 
@@ -475,6 +475,61 @@ PC用のスタイル
     left: 100px;
     font-size: 16px;
   }
+/* MISSION.html S2DGSセクション */
+  /* セクション要素 */
+  #mission-s2dgs {
+    width: 100%;
+    margin: 20px;
+  }
+  /* 見出し */
+  .mission-h2 {
+    color: #2710d5;
+    font-size: 40px;
+  }
+  /* 見出しの擬似要素 */
+  .mission-h2::after {
+    content: none;
+  }
+/* MISSION.html 5Goalsセクション */
+  /* セクション要素 */
+  #mission-5goals {
+    margin: 20px;
+    display: flex;
+  }
+  /* 左右のカラムをグループ化するdiv */
+  #mission-5goals > div {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  /* 一つ一つのコンテンツをグループ化するdiv */
+  #mission-5goals > div > div {
+    margin-bottom: 40px;
+  }
+  /* コンテンツの右側に表示する画像 */
+  .fivegoals-image-right {
+    float: right;
+    margin: 20px;
+  }
+   /* コンテンツの左側に表示する画像 */ 
+  .fivegoals-image-left {
+    float: left;
+    margin: 20px;
+  }
+  /* コンテンツの番号を囲むspan要素 */
+  .fivegoals-number {
+    color: #2710d5;
+    font-size: 48px;
+    margin: 0;
+  }
+  /* コンテンツの見出し */
+  .fivegoals-h3 {
+    font-size: 28px;
+    margin: 0;
+  }
+  /* コンテンツの説明文 */
+  .fivegoals-p {
+    margin: 0;
+  }
   }
 /* ======================
 スマホ用のスタイル
@@ -500,12 +555,12 @@ PC用のスタイル
   #nav-sp {
     background-color: #2710d5;
     position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 100;
   }
   /* 閉じるボタン */
   #close {
@@ -875,4 +930,45 @@ PC用のスタイル
     margin-top: 30px;
     color: #ffffff;
   }
+/* MISSION.html ページ */
+  /* セクション要素 */
+  #mission-main {
+    height: 256px;
+    width: 100%;
+    background-image: url("images/mission/mission-main.png");
+    background-repeat: no-repeat;
+    background-position-y: center; 
+    background-size: auto 208px;
+  }
+  /* 見出しやパンくずリストをグループ化するdiv */
+  #mission-title {
+    background-color: #2710d5;
+    color: #ffffff;
+    width: 136px;
+    height: 256px;
+    border-radius: 0 248px 248px 0;
+    position: relative;
+  }
+  /* 英語の見出し */
+  #mission-title > h1 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 40px;
+  }
+  /* カタカナの見出し */
+  #mission-title > span {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    font-size: 18px;
+  }
+  /* パンくずリスト */
+  #mission-title > div {
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    font-size: 13px;
+  }
+/* S2DGsセクション */
 }
