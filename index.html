@@ -12,6 +12,11 @@
     <meta property="og:description" content="SocialTechはEdTech業界のリーディングカンパニーを目指します。" />
     <meta property="og:image" content="https://maoyam.github.io/socialtech/images/logo.png" />
     <link rel="stylesheet" href="style.css">
+    <!-- slickの読み込み -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   </head>
   <body>
 <!-- HEADER -->
@@ -48,12 +53,19 @@
     <main>
       <article>
 <!-- MAIN VISUAL -->
-        <section id="main-visual">
-          <div id="main-message">
-            <h1>WORLD PEACE</h1>
-            <p>IT教育で世界平和を実現する</p>
+        <!-- カルーセル -->
+        <section id="carousel-section">
+          <div class="carousel">
+            <div>
+              <a href="index.html"><img class="carouselImg" src="images/carousel1.png"></a>
+            </div>
+            <div>
+              <a href="mission.html"><img class="carouselImg" src="images/carousel2.png"></a>
+            </div>
+            <div>
+              <a href="product.html"><img class="carouselImg" src="images/carousel3.png"></a>
+            </div>
           </div>
-          <img src="images/index/index-main.png" alt="PCの周りに集まる多国籍の仲間たち">
         </section>
 
 <!-- MISSION SECTION -->
@@ -294,7 +306,7 @@
           <h2 class="index-h2">CONTACT</h2>
           <h3>お問い合わせ</h3>
           <!-- STATIC FORMSのタグ -->
-          <form action="https://api.staticforms.xyz/submit" method="post">
+          <form id="form">
               <!-- Replace with accesKey sent to your email -->
               <input type="text" name="honeypot" style="display: none;">
               <input type="hidden" name="accessKey" value="f9869940-c735-4dfa-a395-fef003e7e482">
@@ -309,7 +321,7 @@
                 <label class="contact-label">お名前<span class="contact-span">必須</span></label>
               </div>
               <div>
-                <input type="text" name="name" placeholder="入力してください" class="contact-textbox">
+                <input id="name" type="text" name="name" placeholder="入力してください" class="contact-textbox">
               </div>
             </div>
             <!-- FORM 2行目 -->
@@ -318,7 +330,7 @@
                 <label class="contact-label">フリガナ<span class="contact-span">必須</span></label>
               </div>
               <div>
-                <input type="text" name="furigana" placeholder="入力してください" class="contact-textbox">
+                <input id="furigana" type="text" name="furigana" placeholder="入力してください" class="contact-textbox">
               </div>
             </div>
             <!-- FORM 3行目 -->
@@ -327,7 +339,7 @@
                 <label class="contact-label">メールアドレス<span class="contact-span">必須</span></label>
               </div>
               <div>
-                <input type="text" name="email" placeholder="入力してください" class="contact-textbox">
+                <input id="email" type="text" name="email" placeholder="入力してください" class="contact-textbox">
               </div>
             </div>
             <!-- FORM 4行目 -->
@@ -336,7 +348,7 @@
                 <label class="contact-label">電話番号</label>
               </div>
               <div>
-                <input type="text" name="tel" placeholder="入力してください" class="contact-textbox">
+                <input id="tel" type="text" name="tel" placeholder="入力してください" class="contact-textbox">
               </div>
             </div>
             <!-- FORM 5行目 -->
@@ -345,7 +357,7 @@
                 <label class="contact-label">お問い合わせ内容<span class="contact-span">必須</span></label>
               </div>
               <div>
-                <textarea name="message" placeholder="入力してください" class="contact-textarea"></textarea>
+                <textarea id="message" name="message" placeholder="入力してください" class="contact-textarea"></textarea>
               </div>
             </div>
             <!-- FORM 6行目 -->
@@ -394,11 +406,11 @@
                     お客様がご自身の個人情報を弊社に提供されるか否かは、お客様のご判断によりますが、もしご提供されない場合には、適切なサービスが提供できない場合がありますので予めご了承ください。
                   </div>
                 </details>
-                <input type="checkbox" name="agree">
+                <input id="agree" type="checkbox" name="agree">
                 <span>個人情報の取り扱いについてご同意いただける場合は、チェックをしてください。</span>
               </div>
             </div>
-            <input type="image" src="images/button-submit.png" value="Submit" alt="送信する">
+            <input id="submit" type="image" src="images/button-submit.png" alt="送信する">
           </form>
         </section>
       </article>
@@ -423,6 +435,8 @@
       </footer>
     </main>
      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+     <!-- slickの読み込み -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
      <script src="script.js"></script>
   </body>
 </html>
